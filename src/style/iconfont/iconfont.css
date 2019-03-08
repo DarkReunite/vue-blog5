@@ -1,0 +1,21 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1543422975966'); /* IE9*/
+  src: url('iconfont.eot?t=1543422975966#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAASAAAsAAAAABvwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY9Akh/Y21hcAAAAYAAAABSAAABfoD/6zVnbHlmAAAB1AAAAK8AAADYtSn2XmhlYWQAAAKEAAAALgAAADYTaQ39aGhlYQAAArQAAAAcAAAAJAfeA4RobXR4AAAC0AAAAAwAAAAMDAAAAGxvY2EAAALcAAAACAAAAAgANgBsbWF4cAAAAuQAAAAfAAAAIAEOACxuYW1lAAADBAAAAUUAAAJtPlT+fXBvc3QAAARMAAAAMQAAAEqhCGyBeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGBye9TzrZW7438AQw9zA0AAUZgTJAQDzGAz8eJztkLkNgEAMBMc+Q4Aog4CAYoioimuTNg4/lMFKM9KuHBmYgOYcjoFcCJHTV8m9seRubHljsT99DPcd9m5pdc38WdP71zT+VNTnCvQFQdIOmQAAeJxNzUELgjAYgOF9W819W9AhURxEzEjBow49RSc7+1PrGF76Ff6YZCsXHTq/8D4ECHl79mQrciAE0iSOmKmTPcT8aHZJvAWel1CcwXbQ1vDIEB2dUCl0lUPMUKMfhYAeNZ21zKSfFTao/GspGhEGLhvJYUCy7P+tU1nYbmfy8G4bwwp7WYQUgh0tKr0Gy1XBotPPgl4IP6IWYQ5cCSs2sJZfyt+4tJL7e6A+rOYnGgB4nGNgZGBgAGI22bJD8fw2Xxm4WRhA4IbKk/8I+v8/FgZmkAQHAxNIFAApowrcAAB4nGNgZGBgbvjfwBDDwgACQJKRARUwAwBHCQJsBAAAAAQAAAAEAAAAAAAAAAA2AGx4nGNgZGBgYGZQYADRDAxMQMwFhAwM/8F8BgAL0gE7AHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgJmRiZGZkYWBL7GoKL+8OCc1rSQnMy+VH8ItykzPAPMZGADgjgyOAAAA') format('woff'),
+  url('iconfont.ttf?t=1543422975966') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1543422975966#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowsleftline:before { content: "\e68c"; }
+
+.icon-arrowsrightline:before { content: "\e68d"; }
+

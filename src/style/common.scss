@@ -1,0 +1,53 @@
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body{
+  font-family: 'Montserrat', "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: white;
+  background-color: #4d545c;
+}
+
+
+
+
+
+.article-content, .entry-content{
+  a{
+    color: #c7c7c7;
+    text-decoration: none;
+    box-shadow: 0 1px 0 0 currentColor;
+
+    &:hover{
+      color: #f2f2f2;
+      box-shadow: 0 0 0 0 currentColor;
+    }
+  }
+
+  p{
+    font-family: 'Merriweather', "PingFang SC", "Microsoft YaHei", sans-serif;
+    margin: 0 0 1.75em;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h2,{
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  pre {
+    margin-bottom: 1em;
+    code {
+      font-size: 1em;
+      font-weight: normal;
+    }
+  }
+}
+
