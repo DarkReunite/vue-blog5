@@ -10,6 +10,18 @@ const user = {
 
   authToken () {
     return axios.get('/admin/auth_token');
+  },
+
+  setWebInfo(websiteName , description, master) {
+    return axios.post('/website_info', {
+      websiteName,
+      description,
+      master
+    })
+  },
+
+  getWebInfo() {
+    return axios.get('/website_info');
   }
 }
 
