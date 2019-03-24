@@ -14,6 +14,9 @@ export default {
   components:{
     toolBar,
     navDrawer,
+  },
+  mounted(){
+    this.$api.user.authToken()
   }
 }
 </script>
