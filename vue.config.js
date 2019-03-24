@@ -1,5 +1,5 @@
-var glob = require('glob');
-var path = require('path');
+// var glob = require('glob');
+// var path = require('path');
 
 // const pages = {};
 // let entries;
@@ -30,7 +30,7 @@ var path = require('path');
 const pages = {
   index: {
     entry: 'src/pages/index/index.js',
-    template: 'src/page/index/index.html',
+    template: 'src/pages/index/index.html',
     filename: 'index.html'
   },
   admin: {
@@ -51,7 +51,14 @@ const devServer = {
   }
 }
 
+const chainWebpack = config => {
+  config
+      .plugin('webpack-bundle-analyzer')
+      .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+}
+
 module.exports = {
   pages,
-  devServer
+  devServer,
+  chainWebpack
 }
