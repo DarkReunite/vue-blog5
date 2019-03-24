@@ -36,9 +36,7 @@ export default {
 
   methods: {
     addCate() {
-      this.$api.category.add(this.cate).then(res => {
-        alert("类别添加成功");
-      })
+      this.$api.category.add(this.cate)
     }
   }
 }
