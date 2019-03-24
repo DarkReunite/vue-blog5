@@ -15,7 +15,8 @@ export default {
     return {
       list: [
         {title: '上传文章', icon: 'attach_file', to: '/admin/upload'},
-        {title: '类别管理', icon: 'attach_file', to: '/admin/category'}
+        {title: '类别管理', icon: 'attach_file', to: '/admin/category'},
+        {title: '网站信息', icon: 'attach_file', to: '/admin/info'}
       ]
     }
   }
