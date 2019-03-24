@@ -4,7 +4,7 @@ const category = {
   // 新增类别
   add (cate) {
     cate = cate || 'unknown category'
-    return axios.post(`/category`, null, { params: {
+    return axios.post(`/admin/category`, null, { params: {
       cate
     }})
   },

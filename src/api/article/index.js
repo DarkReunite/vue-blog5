@@ -16,7 +16,7 @@ const article = {
         createdAt: createdAt,
       }
     }
-    return axios.post(`/article`, Form, config);
+    return axios.post(`/admin/article`, Form, config);
   },
 
   // 获取文章列表
@@ -34,7 +34,7 @@ const article = {
 
   // 删除文章
   delete (id) {
-    return axios.delete(`/article/${id}`);
+    return axios.delete(`/admin/article/${id}`);
   },
 
   // 获取文章内容
