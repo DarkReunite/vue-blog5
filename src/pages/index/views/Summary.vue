@@ -31,7 +31,7 @@ export default {
 
   methods: {
     getTotalPage() {
-      this.$api.article.getTotalPage().then(res => {
+      this.$api.article.getTotalPage({page: 5}).then(res => {
         this.totalPage = res.data.data;
       })
     }
