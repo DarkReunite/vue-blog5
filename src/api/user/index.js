@@ -8,7 +8,7 @@ const user = {
     })
   },
 
-  auth_token () {
+  authToken () {
     return axios.get('/admin/auth_token');
   }
 }
