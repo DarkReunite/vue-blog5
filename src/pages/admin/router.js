@@ -11,6 +11,7 @@ const Article = () => import('./views/Article.vue');
 const Category = () => import('./views/Category.vue');
 const Home = () => import('./views/Home.vue');
 const Login = () => import('./views/Login.vue');
+const Info = () => import('./views/Info.vue')
 
 Vue.use(Router)
 
@@ -35,6 +36,10 @@ export default new Router({
         {
           path: 'category',
           component: Category,
+        },
+        {
+          path: 'info',
+          component: Info,
         }
       ]
     },
