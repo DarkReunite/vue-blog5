@@ -10,9 +10,9 @@
             v-layout(row align-center justify-space-around slot="header")
               v-flex(xs1)
                 span {{index}}
-              v-flex(xs8)
-                span {{item.title}}
               v-flex(xs5)
+                span {{item.title}}
+              v-flex(xs3)
                 span {{FormatTime(item.createdAt)}}
               v-flex(xs3)
                 span {{item.category.cate_name || "无类别"}}
