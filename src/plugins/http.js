@@ -6,7 +6,6 @@
 
 import axios from "axios";
 import {getStore, setStore, removeStore} from '@/config/localstorage';
-import router from '@/pages/admin/router';
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 //用来处理刷新token后重新请求的自定义变量
@@ -22,16 +21,15 @@ const _axios = axios.create(config);
 
 function getRefreshToken() {
   let refresh_token = getStore('refresh_token');
-
-  return axios.post('/v0/refresh/token', {
+  return _axios.post('/refresh_token', {
     refresh_token
   })
 }
 
 // 请求拦截器
 _axios.interceptors.request.use(
-  function(config) {
-
+  function (config) {
+    
     let token = getStore('token');
 
     //添加Authorization 字段
@@ -44,6 +42,7 @@ _axios.interceptors.request.use(
   }
 );
 
+// 相应拦截器
 _axios.interceptors.response.use(
   function (response) {
     return response;
@@ -77,21 +76,21 @@ _axios.interceptors.response.use(
               removeStore('token');
               removeStore('refresh_token');
               //跳转到登录页
-              router.replace({
-                path: '/login'
-              })
+              alert('该操作需要重新登陆！')
+              window.location.href = '/login'
+
           })
       }
       case 404:
         alert("无法连接后端API")
         break;
-      case 406: //refresh_token过期或者不合法，需要重新登录
-        removeStore('token');
-        removeStore('refresh_token');
-        router.replace({
-          path: '/login'
-        })
-        break;
+      // case 406: //refresh_token过期或者不合法，需要重新登录
+      //   removeStore('token');
+      //   removeStore('refresh_token');
+      //   router.replace({
+      //     path: '/login'
+      //   })
+      //   break;
     }
     return Promise.reject(error);
   }
