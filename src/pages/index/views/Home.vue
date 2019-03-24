@@ -16,14 +16,22 @@ import headerTop from '@/pages/index/components/Header';
 
 import widget from '@/pages/index/components/Widget';
 import footerBottom from '@/pages/index/components/Footer';
+import {mapActions} from 'vuex';
 
 export default {
   components:{
     headerTop,
     widget,
     footerBottom
+  },
+  created(){
+    this.getWebInfo();
+  },
+  methods: {
+    ...mapActions(['getWebInfo'])
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
