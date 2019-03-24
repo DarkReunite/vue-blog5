@@ -7,7 +7,7 @@
         label Username
         v-text-field(v-model="username")
         label Password
-        v-text-field(v-model="password" type="password")
+        v-text-field(v-model="password" type="password" @keyup.enter="login")
       v-card-actions
         v-btn(flat color="primary" @click="authToken") AuthToken
         v-spacer
