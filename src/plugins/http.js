@@ -76,7 +76,6 @@ _axios.interceptors.response.use(
               removeStore('token');
               removeStore('refresh_token');
               //跳转到登录页
-              alert('该操作需要重新登陆！')
               window.location.href = '/login'
 
           })
