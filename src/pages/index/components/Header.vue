@@ -3,8 +3,8 @@
     div.site-header-main
       div.site-branding
         h1.site-title 
-          a(href="/") 米奇的妙妙屋
-        p.site-descripion 那些疯狂到自己以为能够改变世界的人，才能够真正的改变世界
+          a(href="/") {{websiteName}}
+        p.site-descripion {{description}}
       div.site-header-menu
         nav.main-navigation
           div.menu-header-container
@@ -18,12 +18,18 @@
 </template>
 
 <script>
+import {mapState} from 'vuex';
+
 export default {
   data(){
     return {
 
     }
-  }
+  },
+  computed: mapState([
+      'websiteName',
+      'description'
+    ])
 }
 </script>
 
