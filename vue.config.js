@@ -28,37 +28,40 @@
 // });
 
 const pages = {
-  index: {
-    entry: 'src/pages/index/index.js',
-    template: 'src/pages/index/index.html',
-    filename: 'index.html'
-  },
-  admin: {
-    entry: 'src/pages/admin/admin.js',
-    template: 'src/pages/admin/admin.html',
-    filename: 'admin.html'
-  }
-}
+    index: {
+        entry: 'src/pages/index/index.js',
+        template: 'src/pages/index/index.html',
+        filename: 'index.html'
+    },
+    admin: {
+        entry: 'src/pages/admin/admin.js',
+        template: 'src/pages/admin/admin.html',
+        filename: 'admin.html'
+    }
+};
 
 //匹配入口的url
 const devServer = {
-  historyApiFallback: {
-    rewrites: [
-      // { from: /./, to: '/index.html'},
-      { from: /^\/admin/, to: '/admin.html'},
-      { from: /login/, to: '/admin.html'}
-    ]
-  }
-}
+    historyApiFallback: {
+        rewrites: [
+            // { from: /./, to: '/index.html'},
+            { from: /^\/admin/, to: '/admin.html' },
+            { from: /login/, to: '/admin.html' }
+        ]
+    }
+};
 
 const chainWebpack = config => {
-  config
-      .plugin('webpack-bundle-analyzer')
-      .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
-}
+    config.plugin('webpack-bundle-analyzer').use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
+};
 
 module.exports = {
-  pages,
-  devServer,
-  chainWebpack
-}
+    pages,
+    devServer,
+    chainWebpack,
+    configureWebpack: {
+        externals: {
+            'highlight.js': 'hljs'
+        }
+    }
+};
