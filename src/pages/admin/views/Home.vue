@@ -15,7 +15,7 @@ export default {
     toolBar,
     navDrawer,
   },
-  mounted(){
+  created(){
     this.$api.user.authToken()
   }
 }
