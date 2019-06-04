@@ -1,6 +1,6 @@
 {
-    "tabWidth": 4,            // 一个tab的宽度为4个space
-    "singleQuote": true,      // 使用单引号
+    "tabWidth": 4,           
+    "singleQuote": true,     
     "trailingComma": "none",
     "bracketSpacing": true,
     "printWidth": 120
